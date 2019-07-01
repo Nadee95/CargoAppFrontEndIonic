@@ -1,0 +1,30 @@
+<ion-split-pane color="dark" contentID="menuContent">
+  <ion-menu contentID="menuContent">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle auto-hide="false" *ngFor="let p of pages">
+          <ion-item
+            [routerLink]="p.url"
+            routerDirection="root"
+            [class.active-item]="selectedPath === p.url"
+          >
+            {{ p.title }}
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet contentID="menuContent" main></ion-router-outlet>
+</ion-split-pane>

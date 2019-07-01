@@ -1,0 +1,8 @@
+{
+  "services": [
+    { "id": "01", "name": "Service Provider #01", "image": "images/s1.jpg" },
+    { "id": "02", "name": "Service Provider #02", "image": "images/s2.jpg" },
+    { "id": "03", "name": "Service Provider #03", "image": "images/s3.jpg" },
+    { "id": "04", "name": "Service Provider #04", "image": "images/s4.jpg" }
+  ]
+}

@@ -1,5 +1,7 @@
 {
   "name": "IonicCargoApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
