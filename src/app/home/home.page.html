@@ -1,16 +1,79 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title> <ion-icon name="HOME"></ion-icon>Ionic Cargo App </ion-title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <ion-toolbar color="secondary">
+    <ion-title slot="start">SMART CARGO DELIVERY</ion-title>
+    <!--   <ion-segment (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="friends">
+        <ion-label>REGISTER</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="enemies">
+        <ion-label>LOGIN</ion-label>
+      </ion-segment-button>
+    </ion-segment> -->
+
+    <ion-buttons slot="secondary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="contact"></ion-icon>
+      </ion-button>
+      <ion-button>
+        REGISTER
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="log-in"></ion-icon>
+      </ion-button>
+      <ion-button>
+        LOGIN
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-card>
+<ion-content  class="jumbotron">
+    
+  <div>
+    <ion-row style="padding-top: 12rem">
+      <ion-col size="6">
+        <h1 class="display-3" style="font-size: 3rem;color:thistle">Cargo Pooling</h1>
+        <br />
+        <p class="lead" style="text-align: justify;color: white" >
+          The Sri Lankan local cargo transportation usually done by high level
+          companies or sellers themselves. But the single truck owners give
+          their service when called or reserved weekly routing to Colombo etc.
+          other times they looking for client in a vehicle park and put their
+          time and service in vain. Most of the time when a transporter done a
+          job, their returning drive became a jobless and time and their time
+          and oil through returning drive not for income. Some world class cargo
+          transporting app also not available in sri Lanka. Some seller also
+          cannot find suitable transport for deliver their cargo to customer.
+          Also a customer cannot track of their cargo and cannot keep in touch
+          when they arrive.<a style="color: red" href="#">read more</a>
+        </p>
+      </ion-col>
+      <ion-col >
+
+        </ion-col>
+      <ion-col>
+          <div class="card" >
+              <div class="card-header">
+                Not a User?
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">SIGN UP NOW!</h5>
+                <p class="card-text">feel the ultimate user friendly facilities and smart technologies  for cargo transporting.</p>
+                <a href="#" class="btn btn-primary">Sign Up</a>
+              </div>
+            </div>
+       </ion-col>
+       <ion-col size=1>
+
+       </ion-col>
+    </ion-row>
+  </div>
+  <!-- <div style="background-image:url('../assets/images/8s.jpg');"></div> -->
+  <!-- <img src="../assets/images/8s.jpg" alt="cargoShip" /> -->
+
+  <!-- <ion-card>
     <ion-card-header>
-      <img
-        src="https://www.alimentarium.org/en/system/files/thumbnails/image/Transport_Cargo_Conteneur.jpg"
-        alt="cargoShip"
-      />
       <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
       <ion-card-title>Card Title</ion-card-title>
     </ion-card-header>
@@ -20,5 +83,37 @@
       climb a mountain or spend a week in the woods. Wash your spirit clean.
     </ion-card-content>
     <ion-button routerLink="/menu"> menu </ion-button>
-  </ion-card>
+  </ion-card> -->
 </ion-content>
+<ion-footer>
+  <ion-toolbar color="dark">
+    <ion-row>
+      <ion-col>
+        <ion-segment (ionChange)="segmentChanged($event)">
+          <ion-segment-button value="friends">
+            <ion-icon size="large" name="information-circle-outline"></ion-icon>
+            About Us
+          </ion-segment-button>
+          <ion-segment-button value="enemies">
+            <ion-icon size="large" name="repeat"></ion-icon>
+            Feedback
+          </ion-segment-button>
+        </ion-segment>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-segment (ionChange)="segmentChanged($event)">
+            <ion-segment-button value="friends">
+              <ion-icon size="large" name="logo-android"></ion-icon>
+              Play Store
+            </ion-segment-button>
+            <ion-segment-button value="enemies">
+              <ion-icon size="large" name="logo-apple"></ion-icon>
+              Apple Store
+            </ion-segment-button>
+          </ion-segment>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

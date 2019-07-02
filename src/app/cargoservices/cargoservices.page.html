@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="secondary">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -9,10 +9,10 @@
 
 <ion-content>
   <div class="container" *ngFor="let service of services">
-    <ion-card color="light">
+    <ion-card color="medium">
       <ion-row>
-        <ion-col offset-sm>
-          <ion-img style="width:360px" src="{{ service.image }}"></ion-img>
+        <ion-col>
+          <ion-img style="width:380px" src="{{ service.image }}"></ion-img>
         </ion-col>
 
         <ion-col>
@@ -22,6 +22,7 @@
             >
             <ion-card-title>{{ service.name }}</ion-card-title>
           </ion-card-header>
+
           <ion-card-content>
             Keep close to Nature's heart... and break clear away, once in
             awhile, and climb a mountain or spend a week in the woods. Wash your
@@ -29,6 +30,7 @@
           </ion-card-content>
         </ion-col>
       </ion-row>
+      <ion-badge color="success">{{ service.rating }}</ion-badge>
     </ion-card>
   </div>
 </ion-content>
